@@ -1,0 +1,23 @@
+#deny from all
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]
+RewriteRule .* - [E=HTTP_IF_NONE_MATCH:%{HTTP:If-None-Match}]
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(flv|woff|woff2|eot|svg|otf|ttf|gif|jpg|jpeg|png|ico|swf|js|css|pdf|ico)$">
+        Header append Cache-Control "max-age=604800, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <filesMatch "\.(flv|woff|woff2|eot|svg|otf|ttf|gif|jpg|jpeg|png|ico|swf|js|css|pdf|ico)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+    </filesMatch>
+</IfModule>

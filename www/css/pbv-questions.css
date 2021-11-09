@@ -1,0 +1,205 @@
+.questions {
+    background: var(--color3) scroll no-repeat center;
+    background-size: cover;
+    color: var(--colorBg);
+}
+.questions-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.questions-wrapper {
+    /*margin-top: -23.5rem;*/
+    position: relative;
+    z-index: 1;
+}
+.questions-content {
+    border-radius: 2rem;
+    padding: 22rem 0 6rem 0;
+}
+.questions-left {
+    flex: auto;
+    padding-right: 8rem;
+}
+.questions-left .stroke {
+    -webkit-text-stroke-color: rgba(255,255,255,.1);
+}
+.questions-left .h1 {
+    padding: 0;
+    text-align: left;
+}
+.questions-left .h-sub {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    line-height: normal;
+}
+.questions-buttons a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.questions-buttons .btn {
+    height: 4rem;
+    line-height: 4rem;
+    border-width: 0.1rem;
+    font-size: 1.2rem;
+    padding: 0 3rem;
+    min-width: unset;
+    font-weight: normal;
+}
+.questions-buttons .btn:first-child {
+    margin-right: 1rem;
+}
+a.questions-social-item {
+    text-align: center;
+    color: var(--colorBg);
+    margin-left: 3rem;
+    text-decoration: none;
+}
+.questions-social-item i {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+
+}
+.questions-phone {
+
+}
+.questions-phone-link {
+
+}
+.questions-phone-link a {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--colorBg);
+    text-decoration: none;
+}
+.questions-form {
+    max-width: 33rem;
+    border: 2px solid var(--colorBg);
+    position: relative;
+    padding: 0 4rem 2rem 4rem;
+    border-radius: 2rem;
+}
+.questions-form .h {
+    font-size: 2.3rem;
+    font-weight: bold;
+    background-color: var(--color3);
+    padding: 0 1.3rem;
+    margin-top: -0.65em;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: normal;
+}
+.questions-form .h-sub {
+    line-height: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.questions-form .form-header {
+    color: var(--colorBg);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.questions-form .form-control {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: var(--colorBg);
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+}
+.questions-form .form-group .btn {
+    height: 5rem;
+    line-height: 5rem;
+    width: 100%;
+}
+
+.questions-form .field-feedback-name,
+.questions-form .field-feedback-phone {
+    position: relative;
+}
+.questions-form .field-feedback-name:after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url('../img/PBV/icon-user.png') scroll no-repeat left center;
+}
+.questions-form .field-feedback-phone:after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url('../img/PBV/icon-phone.png') scroll no-repeat left center;
+}
+.questions-form .field-feedback-name .form-control,
+.questions-form .field-feedback-phone .form-control {
+    padding-left: 2.5rem;
+}
+.questions-form ::-webkit-input-placeholder {
+    color: var(--colorBg);
+}
+.questions-form ::-moz-placeholder {
+    color: var(--colorBg);
+}
+.questions-form :-ms-input-placeholder {
+    color: var(--colorBg);
+}
+.questions-form :-moz-placeholder {
+    color: var(--colorBg);
+}
+.questions-form .privacy_field {
+    opacity: 0.85;
+}
+.questions-form .privacy_field,
+.questions-form .privacy_field a
+{
+    color: var(--colorBg);
+}
+
+@media (max-width: 767px) {
+    .questions-left .h-sub {
+        font-size: 1.8rem;
+    }
+    .questions-wrapper {
+        margin-top: 3rem;
+    }
+    .questions-image {
+        display: none;
+    }
+    .questions-content {
+        padding: 2.5rem 0;
+    }
+    .questions-form {
+        margin-top: 6rem;
+        max-width: unset;
+        width: 100%;
+    }
+    .questions-phone-link a {
+        font-size: 2.4rem;
+    }
+    .questions-phone {
+        margin: 1rem 0;
+
+    }
+    .questions-phone-text {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .questions-phone-link {
+        margin-left: 0;
+    }
+    .questions-buttons .btn {
+        margin-left: 0 !important;
+    }
+}

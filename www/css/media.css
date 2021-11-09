@@ -1,0 +1,154 @@
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1199px) {
+    html {
+
+    }
+    .links-list-item-info .h-sub {
+        font-size: 1.5rem;
+    }
+    .links-list-item-info .text {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .about-item .h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 9px;
+    }
+
+    .about-item-left {
+        flex: 0 0 100%;
+        background-size: auto 100%;
+    }
+
+    .links-list-item-info .h {
+        font-size: 4rem;
+    }
+    .links-list-item {
+        margin: 1px auto;
+    }
+    .links-list-item-info .h-sub {
+        font-size: 1.8rem;
+    }
+    .links-list-item-info .text {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .header {
+        margin-bottom: 1.5rem;
+    }
+    .header-menu,
+    .header-menu-sticky
+    {
+        display: none;
+    }
+    .header-top {
+        padding-bottom: 1rem;
+    }
+    .header-logo {
+        height: 7rem;
+    }
+    .header-logo img {
+        width: auto;
+        max-height: 100%;
+    }
+    .footer-bottom > div.footer-left {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .footer-right > div + div {
+        margin-top: 4rem;
+    }
+    .footer-contacts {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .bottom-text {
+        columns: 1;
+        margin: 2rem 0;
+    }
+
+    .catalog-text {
+        padding: 4rem 0 4rem 0;
+        columns: 1;
+    }
+
+    .news-left {
+        flex: 0 0 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    h1, .h1 {
+        font-size: 3rem;
+    }
+    .about-item {
+        flex: 0 0 100%;
+    }
+    .about-item-center {
+        margin-bottom: 4.5rem;
+    }
+    .fabrics-map {
+        display: none;
+    }
+    .fabrics-list {
+        margin-bottom: 0;
+    }
+    .footer-menu ul li {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    footer {
+        margin-top: 5rem;
+    }
+    .footer-addresses {
+        max-width: unset;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .footer-address {
+        padding-left: 0;
+        background: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-right div+div {
+        margin-left: 1.5rem;
+    }
+    .links-list-item-info {
+        padding: 1.5rem;
+    }
+    .links-list-item-info .h {
+        font-size: 2.6rem;
+    }
+    .links-list-item-info .h-sub {
+        font-size: 1.5rem;
+    }
+    .links-list-item-info .text {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 339px) {
+
+}

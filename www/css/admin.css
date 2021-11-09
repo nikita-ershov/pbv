@@ -1,0 +1,79 @@
+body.admin-content-edit-on .admin-content-edit:hover {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    cursor: url('../img/icon-edit.png'), auto;
+}
+.admin-content-edit__editor iframe {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body.admin-content-edit-on .admin-content-edit__empty {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+body.admin-content-edit-on .admin-content-edit__marker:before,
+body.admin-content-edit-on .admin-content-edit:hover:before
+{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.2);
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.admin-widget-before {
+    height: 40px;
+}
+.admin-widget {
+    height: 40px;
+    position: fixed;
+    left: 0;
+    /*bottom: 25px;*/
+    bottom: 0px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    z-index: 99995;
+
+    -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.85);
+    -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.85);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.85);
+}
+
+.admin-widget ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 1200px;
+}
+.admin-widget ul li {
+    margin: 0;
+    border-right: 1px solid #777;
+    list-style: none;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.admin-widget ul li:last-child {
+    border-right: 0;
+}
+.admin-widget a, .admin-widget .a {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px;
+}
+.admin-widget a:hover {
+    color: #cc0000;
+}
+.admin-widget a#admin-content-edit.admin-content-edit-on {
+    background: #fcb326;
+    color: #000;
+    text-decoration: none;
+}
